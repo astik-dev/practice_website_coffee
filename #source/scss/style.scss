@@ -24,9 +24,31 @@ h1 {
 	text-transform: uppercase;
 }
 
-h4{}
+h2{
+	font-family: 'Bebas Neue';
+	font-size: 50px;
+	color: #FFFFFF;
+}
+h2:after,
+h2:before {
+	content: "";
+	display: inline-block;
+	width: 88px;
+	height: 1px;
+	background-color: #FFFFFF;
+}
+h2:before {
+	margin: 0 15px 17px 0;
+}
+h2:after {
+	margin: 0 0 17px 15px;
+}
 
-h3{}
+h3{
+	font-weight: 600;
+	font-size: 22px;
+	color: #D3AD7F;
+}
 
 h4{
 	font-weight: 600;
@@ -153,6 +175,56 @@ h4{
 				}
 			}
 		}
+
+		// ============================ popular-menu ===============================
+		.popular-menu{
+			background-color: #191919;
+
+			&__body{
+				text-align: center;
+				position: relative;
+				padding: 311px 0 110px 0;
+			}
+
+			&__img{
+				position: absolute;
+				top: -211px;
+				left: 2.074%;
+			}
+
+			&__title {
+				margin: 0 0 50px 0;
+			}
+
+			&__menu{
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 31px 65px;
+			}
+			&__item{
+				display: grid;
+				grid-template-columns: auto 1fr auto;
+				gap: 26px;
+				align-items: center;
+				border-bottom: 1px solid #605D5D;
+				padding: 0 0 15px 0;
+			}
+			&__item-text{
+				justify-self: start;
+				text-align: left;
+			}
+			&__item-text p{
+				font-size: 16px;
+				color: #938E8E;
+
+				margin: 19px 0 0 0;
+			}
+			&__item-price{
+				font-weight: 700;
+				font-size: 20px;
+				color: #FFFFFF;
+			}
+		}
 	}
 
 	// ============================ footer ===============================
@@ -204,6 +276,7 @@ h4{
 				margin: 0 0 50px 0;
 			}
 			input{
+				padding: 0 15px;
 				display: block;
 				text-align: center;
 				width: 100%;
