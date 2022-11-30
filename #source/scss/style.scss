@@ -47,11 +47,14 @@ h4{
 
 
 
+// ============================ wrapper ===============================
 .wrapper {
 	min-height: 100%;
 	display: grid;
 	grid-template-rows: auto 1fr auto;
+	background-color: #101011;
 
+	// ============================ header ===============================
 	.header {
 		background: url("../img/header/bg.jpg") center/cover no-repeat;
 
@@ -112,6 +115,47 @@ h4{
 		}
 	}
 
+	// ============================ main ===============================
+	.main {
+
+		// ============================ now-enjoy ===============================
+		.now-enjoy{
+
+			&__body {
+				padding: 100px 0 309px 0;
+				margin: 0 auto;
+
+				max-width: 937px;
+				display: flex;
+				align-items: center;
+			}
+
+			&__text{
+				margin: 0 60px 0 100px;
+
+				font-family: 'Bebas Neue';
+				font-size: 32px;
+				line-height: 38px;
+				color: #FFFFFF;
+			}
+			&__about-us{
+				font-size: 16px;
+				line-height: 26px;
+				color: #938E8E;
+
+				a{
+					display: inline-block;
+					margin: 11px 0 0 0;
+					font-family: 'Bebas Neue';
+					font-size: 20px;
+					text-decoration: underline;
+					color: #FFFFFF;
+				}
+			}
+		}
+	}
+
+	// ============================ footer ===============================
 	.footer{
 		background: url("../img/footer/bg.jpg") center/cover no-repeat;
 
@@ -132,9 +176,6 @@ h4{
 			grid-template-columns: auto 1fr;
 			gap: 30px 15px;
 
-			/*p:nth-child(2){
-				max-width: 226px;
-			}*/
 			p:nth-child(3){
 				grid-column: 1 / 3;
 			}
