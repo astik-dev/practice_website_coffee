@@ -1,5 +1,7 @@
 @charset "UTF-8";
-/* Обнуление */
+/* Reset CSS */ /* Обнуление */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 * {
 	padding: 0;
 	margin: 0;
@@ -73,3 +75,94 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ------------------------ */
+/* Font Poppins */
+/* Font Bebas Neue */
+body {
+	font-family: "Poppins", sans-serif;
+}
+
+[class*=__container] {
+	max-width: 1350px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-family: "Bebas Neue", cursive;
+	font-size: 130px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+}
+
+.wrapper .header {
+	background: url("../img/header/bg.jpg") center/cover no-repeat;
+}
+.wrapper .header .button {
+	display: inline-block;
+	border-radius: 6px;
+	padding: 15.5px 16px;
+	font-size: 14px;
+	color: #FFFFFF;
+	font-weight: 500;
+}
+.wrapper .header__container {
+	padding: 0 0 218px 0;
+}
+.wrapper .header .main-menu {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: auto 50px 1fr 50px auto;
+	grid-template-columns: auto 1fr auto;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	gap: 50px;
+	padding: 11px 0;
+}
+.wrapper .header .main-menu__menu {
+	-ms-grid-column-align: end;
+	    justify-self: end;
+}
+.wrapper .header .main-menu__items {
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	gap: 40px;
+}
+.wrapper .header .main-menu__item a {
+	font-weight: 500;
+	font-size: 16px;
+	color: #FFFFFF;
+}
+.wrapper .header .main-menu__item_active a {
+	color: #D3AD7F;
+}
+.wrapper .header .main-menu__button {
+	background-color: #D3AD7F;
+}
+.wrapper .header__title {
+	max-width: 628px;
+	margin: 179px 0 20px 0;
+}
+.wrapper .header__text {
+	max-width: 538px;
+	color: #938E8E;
+	font-size: 20px;
+	line-height: 30px;
+}
+.wrapper .header__buttons {
+	margin: 50px 0 0 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	gap: 12.65px;
+}
+.wrapper .header__button:nth-child(1) {
+	background-color: #D3AD7F;
+}
+.wrapper .header__button:nth-child(2) {
+	border: 1px solid #D3AD7F;
+}
