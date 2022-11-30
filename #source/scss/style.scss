@@ -24,22 +24,36 @@ h1 {
 	text-transform: uppercase;
 }
 
+h4{}
+
+h3{}
+
+h4{
+	font-weight: 600;
+	font-size: 20px;
+	color: #FFFFFF;
+}
+
+.button {
+	display: inline-block;
+	border-radius: 6px;
+	padding: 15.5px 16px;
+	background: transparent;
+
+	font-size: 14px;
+	color: #FFFFFF;
+	font-weight: 500;
+}
+
 
 
 .wrapper {
+	min-height: 100%;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
 
 	.header {
 		background: url("../img/header/bg.jpg") center/cover no-repeat;
-
-		.button {
-			display: inline-block;
-			border-radius: 6px;
-			padding: 15.5px 16px;
-
-			font-size: 14px;
-			color: #FFFFFF;
-			font-weight: 500;
-		}
 
 		&__container {
 			padding: 0 0 218px 0;
@@ -95,6 +109,90 @@ h1 {
 		}
 		&__button:nth-child(2){
 			border: 1px solid #D3AD7F;
+		}
+	}
+
+	.footer{
+		background: url("../img/footer/bg.jpg") center/cover no-repeat;
+
+		&__body {
+			padding: 50px 0;
+			display: grid;
+			grid-template-columns: 1fr auto auto minmax(auto, 345px);
+			gap: 50px 102px;
+		}
+
+		&__text {
+			max-width: 336px;
+			font-size: 16px;
+			line-height: 22px;
+			color: #938E8E;
+
+			display: grid;
+			grid-template-columns: auto 1fr;
+			gap: 30px 15px;
+
+			/*p:nth-child(2){
+				max-width: 226px;
+			}*/
+			p:nth-child(3){
+				grid-column: 1 / 3;
+			}
+		}
+
+		&__title{
+			margin: 0 0 30px 0;
+		}
+
+		&__useful-links ul,
+		&__help-links ul{
+			display: flex;
+			flex-direction: column;
+			gap: 15px;
+		}
+
+		&__link{
+			font-family: 'Arial';
+			font-size: 16px;
+			line-height: 16px;
+			color: #938E8E;
+		}
+
+		&__subscribe{
+			h4{
+				margin: 0 0 50px 0;
+			}
+			input{
+				display: block;
+				text-align: center;
+				width: 100%;
+				height: 45px;
+				background-color: #FFFFFF;
+				border-radius: 6px;
+			}
+			button{
+				margin: 30px 0 0 0;
+				border: 1px solid #D3AD7F;
+			}
+		}
+
+		&__soc-net{
+			grid-column: 1 / 5;
+
+			display: grid;
+			grid-template-columns: repeat(auto-fit, 35px);
+			grid-template-rows: repeat(auto-fit, 35px);
+			gap: 30px;
+			align-items: center;
+			justify-items: center;
+
+		}
+
+		&__rights{
+			grid-column: 1 / 5;
+			font-size: 16px;
+			color: #938E8E;
+			justify-self: center;
 		}
 	}
 }
