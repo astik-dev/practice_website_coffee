@@ -1,2 +1,1 @@
-# practice_website_coffee
-Coffee website
+# [Coffee website](https://ast-astik.github.io/practice_website_coffee/)
