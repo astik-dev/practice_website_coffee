@@ -361,6 +361,82 @@ h4{
 				object-fit: cover;
 			}
 		}
+
+
+		.guestbook{
+
+			&__body{
+				padding: 100px 0 185.5px 0;
+				text-align: center;
+			}
+
+			&__items{
+				max-width: 1170px;
+				margin: 50px auto 0 auto;
+
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+				gap: 15px;
+			}
+
+			&__item{
+				background-color: #191919;
+				border-radius: 8px;
+
+				padding: 25px 19px 0 19px;
+
+				display: grid;
+				grid-template-rows: 1fr 34.5px;
+			}
+
+			&__quotes{
+				display: inline-block;
+				width: 41px;
+				height: 34px;
+
+				img{
+					height: 100%;
+					width: 100%;
+					object-fit: cover;
+				}
+			}
+
+			&__text{
+				font-size: 14px;
+				line-height: 22px;
+				color: #938E8E;
+
+				margin: 18px 0 21px 0;
+			}
+			&__profile{
+
+				p:last-child{
+					font-size: 12px;
+					line-height: 14px;
+					color: #FFFFFF;
+					opacity: 0.3;
+				}
+			}
+			&__avatar{
+				display: inline-block;
+				height: 69px;
+				width: 69px;
+
+				img{
+					width: 100%;
+					height: 100%;
+				}
+			}
+			&__name{
+				font-weight: 500;
+				font-size: 14px;
+				line-height: 14px;
+				color: #FFFFFF;
+				opacity: 0.3;
+
+				margin: 19px 0 4px 0;
+			}
+		}
 	}
 
 	// ============================ footer ===============================
