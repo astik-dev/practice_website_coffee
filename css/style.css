@@ -292,6 +292,37 @@ h4 {
 	font-size: 20px;
 	color: #FFFFFF;
 }
+.wrapper .main .exclusive__body {
+	padding: 100px 0;
+	text-align: center;
+}
+.wrapper .main .exclusive__items {
+	display: -ms-inline-grid;
+	display: inline-grid;
+	-ms-grid-columns: 390px 390px 390px;
+	grid-template-columns: 390px 390px 390px;
+	margin: 50px 0 0 0;
+}
+.wrapper .main .exclusive__item {
+	padding: 38px 50px;
+}
+.wrapper .main .exclusive__item-title {
+	font-weight: 600;
+	font-size: 20px;
+	color: #D3AD7F;
+	margin: 32px 0 0 0;
+}
+.wrapper .main .exclusive__item-text {
+	font-size: 16px;
+	line-height: 26px;
+	color: #938E8E;
+	margin: 25px 0;
+}
+.wrapper .main .exclusive__item-price {
+	font-weight: 700;
+	font-size: 20px;
+	color: #FFFFFF;
+}
 .wrapper .footer {
 	background: url("../img/footer/bg.jpg") center/cover no-repeat;
 }

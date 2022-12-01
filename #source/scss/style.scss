@@ -225,6 +225,45 @@ h4{
 				color: #FFFFFF;
 			}
 		}
+
+		// ============================ exclusive ===============================
+		.exclusive{
+
+			&__body{
+				padding: 100px 0;
+				text-align: center;
+			}
+
+			&__items{
+				display: inline-grid;
+				grid-template-columns: 390px 390px 390px;
+
+				margin: 50px 0 0 0;
+			}
+			&__item{
+				padding: 38px 50px;
+			}
+			&__item-title{
+				font-weight: 600;
+				font-size: 20px;
+				color: #D3AD7F;
+
+				margin: 32px 0 0 0;
+			}
+			&__item-text{
+				font-size: 16px;
+				line-height: 26px;
+				color: #938E8E;
+
+				margin: 25px 0;
+			}
+			&__item-price{
+				font-weight: 700;
+				font-size: 20px;
+				color: #FFFFFF;
+			}
+		}
+
 	}
 
 	// ============================ footer ===============================
