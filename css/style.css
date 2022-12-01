@@ -323,6 +323,141 @@ h4 {
 	font-size: 20px;
 	color: #FFFFFF;
 }
+.wrapper .main .masterchef__items {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 50% 50%;
+	grid-template-columns: 50% 50%;
+	-ms-grid-rows: 50vw;
+	grid-template-rows: 50vw;
+}
+.wrapper .main .masterchef__items > *:nth-child(1) {
+	-ms-grid-row: 1;
+	-ms-grid-column: 1;
+}
+.wrapper .main .masterchef__items > *:nth-child(2) {
+	-ms-grid-row: 1;
+	-ms-grid-column: 2;
+}
+.wrapper .main .masterchef__item-big {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 53.854167% 46.145833%;
+	grid-template-columns: 53.854167% 46.145833%;
+	background-color: #191919;
+	padding: 6vw 0 0 0;
+}
+.wrapper .main .masterchef__item-big-img {
+	-ms-flex-item-align: end;
+	    -ms-grid-row-align: end;
+	    align-self: end;
+	height: 44vw;
+}
+.wrapper .main .masterchef__item-big-img img {
+	height: 100%;
+}
+.wrapper .main .masterchef__item-big-quote {
+	-ms-flex-item-align: center;
+	    -ms-grid-row-align: center;
+	    align-self: center;
+}
+.wrapper .main .masterchef__item-big-quote > div {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 13.99549% 61.39955% 10.83521%;
+	grid-template-columns: 13.99549% 61.39955% 10.83521%;
+}
+.wrapper .main .masterchef__item-big-text {
+	margin: 52px 0 53px 0;
+}
+.wrapper .main .masterchef__item-big-title {
+	font-family: "Bebas Neue";
+	font-size: 50px;
+	color: #FFFFFF;
+}
+.wrapper .main .masterchef__item-big-subtitle {
+	font-size: 16px;
+	line-height: 26px;
+	color: #FFFFFF;
+	margin: 30px 0 20px 0;
+}
+.wrapper .main .masterchef__item-big-text p:nth-child(3) {
+	font-size: 16px;
+	line-height: 26px;
+	color: #938E8E;
+}
+.wrapper .main .masterchef__item-big-quotes {
+	width: 100%;
+}
+.wrapper .main .masterchef__item-big-quotes:first-child {
+	padding: 0 22.5806416129% 0 0;
+}
+.wrapper .main .masterchef__item-big-quotes:last-child {
+	-ms-flex-item-align: end;
+	    -ms-grid-row-align: end;
+	    align-self: end;
+	-webkit-transform: rotate(180deg);
+	        transform: rotate(180deg);
+}
+.wrapper .main .masterchef__items-small {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 50% 50%;
+	grid-template-columns: 50% 50%;
+	-ms-grid-rows: 25vw 25vw;
+	grid-template-rows: 25vw 25vw;
+}
+.wrapper .main .masterchef__items-small > *:nth-child(1) {
+	-ms-grid-row: 1;
+	-ms-grid-column: 1;
+}
+.wrapper .main .masterchef__items-small > *:nth-child(2) {
+	-ms-grid-row: 1;
+	-ms-grid-column: 2;
+}
+.wrapper .main .masterchef__items-small > *:nth-child(3) {
+	-ms-grid-row: 2;
+	-ms-grid-column: 1;
+}
+.wrapper .main .masterchef__items-small > *:nth-child(4) {
+	-ms-grid-row: 2;
+	-ms-grid-column: 2;
+}
+.wrapper .main .masterchef__items-small div {
+	height: 100%;
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	text-align: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+.wrapper .main .masterchef__items-small div:nth-child(1) {
+	background-color: #FFFFFF;
+}
+.wrapper .main .masterchef__items-small div:nth-child(4) {
+	background-color: #000000;
+}
+.wrapper .main .masterchef__item-small-text {
+	font-family: "Bebas Neue";
+	font-size: 60px;
+	text-transform: capitalize;
+	color: #000000;
+}
+.wrapper .main .masterchef__item-small-text_white {
+	color: #FFFFFF;
+}
+.wrapper .main .masterchef__item-small-img {
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	   object-fit: cover;
+}
 .wrapper .footer {
 	background: url("../img/footer/bg.jpg") center/cover no-repeat;
 }

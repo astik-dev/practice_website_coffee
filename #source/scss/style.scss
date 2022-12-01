@@ -75,6 +75,7 @@ h4{
 	display: grid;
 	grid-template-rows: auto 1fr auto;
 	background-color: #101011;
+	//overflow: hidden;
 
 	// ============================ header ===============================
 	.header {
@@ -264,6 +265,102 @@ h4{
 			}
 		}
 
+		// ============================ masterchef ===============================
+		.masterchef{
+			&__items{
+				display: grid;
+				grid-template-columns: 50% 50%;
+				grid-template-rows: 50vw;
+			}
+
+			&__item-big{
+				display: grid;
+				grid-template-columns: 53.854167% 46.145833%;
+
+				background-color: #191919;
+
+				padding: 6vw 0 0 0;
+			}
+			&__item-big-img{
+				align-self: end;
+				height: 44vw;
+			}
+			&__item-big-img img{
+				height: 100%;
+			}
+			&__item-big-quote{
+				align-self: center;
+				>div{
+					display: grid;
+					grid-template-columns: 13.99549% 61.39955% 10.83521%;
+				}
+			}
+			&__item-big-text{
+				margin: 52px 0 53px 0;
+			}
+			// Для адаптирования уменьшить размер и отступы
+			&__item-big-title{
+				font-family: 'Bebas Neue';
+				font-size: 50px;
+				color: #FFFFFF;
+			}
+			&__item-big-subtitle{
+				font-size: 16px;
+				line-height: 26px;
+				color: #FFFFFF;
+				margin: 30px 0 20px 0;
+			}
+			&__item-big-text p:nth-child(3){
+				font-size: 16px;
+				line-height: 26px;
+				color: #938E8E;
+			}
+			//---------------------------------------------
+			&__item-big-quotes{
+				width: 100%;
+			}
+			&__item-big-quotes:first-child{
+				padding: 0 22.58064161290322% 0 0;
+			}
+			&__item-big-quotes:last-child{
+				align-self: end;
+				transform: rotate(180deg);
+			}
+
+			&__items-small{
+				display: grid;
+				grid-template-columns: 50% 50%;
+				grid-template-rows: 25vw 25vw;
+				div{
+					height: 100%;
+					width: 100%;
+					display: flex;
+					align-items: center;
+					text-align: center;
+					justify-content: center;
+				}
+				div:nth-child(1){
+					background-color: #FFFFFF;
+				}
+				div:nth-child(4){
+					background-color: #000000;
+				}
+			}
+			&__item-small-text{
+				font-family: 'Bebas Neue';
+				font-size: 60px;
+				text-transform: capitalize;
+				color: #000000;
+			}
+			&__item-small-text_white{
+				color: #FFFFFF;
+			}
+			&__item-small-img{
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
 	}
 
 	// ============================ footer ===============================
