@@ -59,12 +59,16 @@ h4{
 .button {
 	display: inline-block;
 	border-radius: 6px;
-	padding: 15.5px 16px;
+	padding: 14.5px 15px;
 	background: transparent;
 
 	font-size: 14px;
 	color: #FFFFFF;
 	font-weight: 500;
+
+	border: 1px solid #D3AD7F;
+
+	transition: all 0.2s linear 0s;
 }
 
 
@@ -85,6 +89,8 @@ h4{
 			padding: 0 0 218px 0;
 		}
 
+
+		// ============================ main-menu ===============================
 		.main-menu {
 			display: grid;
 			grid-template-columns: auto 1fr auto;
@@ -106,12 +112,19 @@ h4{
 				font-weight: 500;
 				font-size: 16px;
 				color: #FFFFFF;
+				transition: all 0.15s linear 0s;
+			}
+			&__item a:hover{
+				color: #D3AD7F;
 			}
 			&__item_active a{
 				color: #D3AD7F;
 			}
 			&__button {
 				background-color: #D3AD7F;
+			}
+			&__button:hover {
+				background-color: transparent;
 			}
 		}
 
@@ -133,8 +146,11 @@ h4{
 		&__button:nth-child(1){
 			background-color: #D3AD7F;
 		}
-		&__button:nth-child(2){
-			border: 1px solid #D3AD7F;
+		&__button:nth-child(1):hover{
+			text-decoration: underline;
+		}
+		&__button:nth-child(2):hover{
+			text-decoration: underline;
 		}
 	}
 
@@ -173,6 +189,11 @@ h4{
 					font-size: 20px;
 					text-decoration: underline;
 					color: #FFFFFF;
+
+					transition: all 0.15s linear 0s;
+				}
+				a:hover{
+					color: #D3AD7F;
 				}
 			}
 		}
@@ -210,6 +231,19 @@ h4{
 				border-bottom: 1px solid #605D5D;
 				padding: 0 0 15px 0;
 			}
+			&__item:hover{
+				.popular-menu__item-text{
+					h3{
+						text-decoration: underline;
+					}
+					p {
+						text-decoration: underline;
+					}
+				}
+				.popular-menu__item-price{
+					text-decoration: underline;
+				}
+			}
 			&__item-text{
 				justify-self: start;
 				text-align: left;
@@ -243,6 +277,14 @@ h4{
 			}
 			&__item{
 				padding: 38px 50px;
+
+				transition: all 0.2s linear 0s;
+			}
+			&__item:hover{
+				background-color: #191919;
+				.exclusive__item-title{
+					text-decoration: underline;
+				}
 			}
 			&__item-title{
 				font-weight: 600;
@@ -387,6 +429,13 @@ h4{
 
 				display: grid;
 				grid-template-rows: 1fr 34.5px;
+
+				transition: all 0.2s linear 0s;
+			}
+
+			&__item:hover{
+				transform: scale(1.2, 1.2);
+				box-shadow: 0px 0px 15px rgba(0, 0 , 0, 0.5);
 			}
 
 			&__quotes{
@@ -583,6 +632,9 @@ h4{
 			line-height: 16px;
 			color: #938E8E;
 		}
+		&__link:hover{
+			text-decoration: underline;
+		}
 
 		&__subscribe{
 			h4{
@@ -596,11 +648,20 @@ h4{
 				height: 45px;
 				background-color: #FFFFFF;
 				border-radius: 6px;
+
+				transition: all 0.1s linear 0s;
+			}
+			input:focus{
+				box-shadow: 0px 0px 5px rgba(211, 173, 127, 1);
+				border: 4px solid #D3AD7F;
 			}
 			button{
 				margin: 30px 0 0 0;
-				border: 1px solid #D3AD7F;
 			}
+			button:hover{
+				background-color: #D3AD7F;
+			}
+
 		}
 
 		&__soc-net{
