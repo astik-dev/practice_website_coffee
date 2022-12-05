@@ -13,7 +13,8 @@ body{
 }
 
 [class*="__container"] {
-    max-width: 1350px;
+    max-width: 1390px;
+    padding: 0 20px;
     margin: 0 auto;
 }
 
@@ -78,14 +79,13 @@ h4{
 	min-height: 100%;
 	display: grid;
 	grid-template-rows: auto 1fr auto;
-	background-color: #101011;
-	//overflow: hidden;
+	 background-color: #101011;
 
 	// ============================ header ===============================
 	.header {
 		background: url("../img/header/bg.jpg") center/cover no-repeat;
 
-		&__container {
+		&__body {
 			padding: 0 0 218px 0;
 		}
 
@@ -125,6 +125,10 @@ h4{
 			}
 			&__button:hover {
 				background-color: transparent;
+			}
+
+			&__burger{
+				display: none;
 			}
 		}
 
@@ -212,6 +216,8 @@ h4{
 				position: absolute;
 				top: -211px;
 				left: 2.074%;
+				text-align: center;
+				width: 95.852%;
 			}
 
 			&__title {
@@ -230,6 +236,8 @@ h4{
 				align-items: center;
 				border-bottom: 1px solid #605D5D;
 				padding: 0 0 15px 0;
+
+				height: 100%;
 			}
 			&__item:hover{
 				.popular-menu__item-text{
@@ -271,7 +279,7 @@ h4{
 
 			&__items{
 				display: inline-grid;
-				grid-template-columns: 390px 390px 390px;
+				grid-template-columns: minmax(150px, 390px) minmax(150px, 390px) minmax(150px, 390px);
 
 				margin: 50px 0 0 0;
 			}
@@ -284,6 +292,12 @@ h4{
 				background-color: #191919;
 				.exclusive__item-title{
 					text-decoration: underline;
+				}
+			}
+			&__item-img{
+
+				img{
+					width: 100%;
 				}
 			}
 			&__item-title{
@@ -338,9 +352,9 @@ h4{
 				}
 			}
 			&__item-big-text{
-				margin: 52px 0 53px 0;
+				margin: 2.70831vw 0 2.7604vw 0;
 			}
-			// Для адаптирования уменьшить размер и отступы
+
 			&__item-big-title{
 				font-family: 'Bebas Neue';
 				font-size: 50px;
@@ -350,14 +364,15 @@ h4{
 				font-size: 16px;
 				line-height: 26px;
 				color: #FFFFFF;
-				margin: 30px 0 20px 0;
+				//margin: 30px 0 20px 0;
+				margin: 1.5625vw 0 1.04164vw 0;
 			}
 			&__item-big-text p:nth-child(3){
 				font-size: 16px;
 				line-height: 26px;
 				color: #938E8E;
 			}
-			//---------------------------------------------
+
 			&__item-big-quotes{
 				width: 100%;
 			}
@@ -390,7 +405,7 @@ h4{
 			}
 			&__item-small-text{
 				font-family: 'Bebas Neue';
-				font-size: 60px;
+				font-size: 3.125vw;
 				text-transform: capitalize;
 				color: #000000;
 			}
@@ -502,8 +517,8 @@ h4{
 
 			&__items{
 				display: grid;
-				grid-template-columns: 50% 50%;
-				grid-template-rows: 46.44% 46.44%;
+				grid-template-columns: 1fr 1fr;
+				grid-template-rows: 47.662% 47.662%;
 				gap: 30px;
 
 				margin: 51px 0 0 0;
@@ -607,8 +622,13 @@ h4{
 			color: #938E8E;
 
 			display: grid;
-			grid-template-columns: auto 1fr;
+			grid-template-columns: 95px 1fr;
 			gap: 30px 15px;
+
+			img{
+				align-self: center;
+				width: 100%;
+			}
 
 			p:nth-child(3){
 				grid-column: 1 / 3;
@@ -629,7 +649,6 @@ h4{
 		&__link{
 			font-family: 'Arial';
 			font-size: 16px;
-			line-height: 16px;
 			color: #938E8E;
 		}
 		&__link:hover{
@@ -668,7 +687,7 @@ h4{
 			grid-column: 1 / 5;
 
 			display: grid;
-			grid-template-columns: repeat(auto-fit, 35px);
+			grid-template-columns: repeat(3, 35px);
 			grid-template-rows: repeat(auto-fit, 35px);
 			gap: 30px;
 			align-items: center;
@@ -681,6 +700,823 @@ h4{
 			font-size: 16px;
 			color: #938E8E;
 			justify-self: center;
+		}
+	}
+}
+
+
+
+// ------------------------- @media max-width: 1400px ----------------------------
+@media (max-width: 1400px){
+
+	.wrapper{
+
+		.main{
+
+			.popular-menu{
+
+				&__body{
+					padding: 22.2142857vw 0 110px 0;
+				}
+
+				&__img{
+					top: -15vw;
+				}
+			}
+
+			.now-enjoy{
+				&__body {
+					padding-bottom: 22vw;
+				}
+			}
+		}
+	}
+}
+
+// ------------------------- @media max-width: 1253px ----------------------------
+@media (max-width: 1253px) {
+
+	.wrapper{
+
+		.main{
+
+			.contact{
+
+				&__item{
+					padding: 45px 17px;
+				}
+			}
+		}
+
+		.footer{
+			&__body {
+				grid-template-columns: auto 165px 153px minmax(136px, 300px);
+				gap: 45px 90px;
+			}
+		}
+	}
+}
+
+
+// ------------------------- @media max-width: 1140px ----------------------------
+@media (max-width: 1140px) {
+
+	.wrapper{
+
+		.main{
+
+			.masterchef{
+
+
+				&__item-big-title{
+					font-size: 40px;
+				}
+				&__item-big-subtitle{
+					font-size: 16px;
+					line-height: 21px;
+				}
+				&__item-big-text p:nth-child(3){
+					font-size: 16px;
+					line-height: 21px;
+				}
+			}
+		}
+	}
+}
+
+
+
+// ------------------------- @media max-width: 1099px ----------------------------
+@media (max-width: 1099px) {
+
+	.wrapper{
+
+		.main{
+
+			.popular-menu{
+
+				&__body{
+					padding-bottom: 100px;
+				}
+			}
+
+			.exclusive{
+
+				&__body{
+					padding: 90px 0;
+				}
+
+				&__items{
+					margin: 40px 0 0 0;
+				}
+			}
+
+			.guestbook{
+
+				&__body{
+					padding: 90px 0 165.5px 0;
+				}
+			}
+
+			.contact{
+
+
+				&__body{
+					padding: 90px 0;
+				}
+			}
+		}
+
+		.footer{
+
+			&__body {
+				grid-template-columns: auto 165px 153px minmax(136px, auto);
+				gap: 40px 70px;
+			}
+		}
+	}
+}
+
+// ------------------------- @media max-width: 991px -----------------------------
+@media (max-width: 991px) {
+	h1{
+		font-size: 100px;
+	}
+
+	.wrapper{
+
+		.header{
+
+			&__body{
+				padding-bottom: 180px;
+			}
+
+			.main-menu{
+				gap: 30px;
+
+				&__items{
+					gap: 20px;
+				}
+			}
+			&__title{
+				max-width: 595px;
+				margin: 150px 0 20px 0;
+			}
+			&__text{
+				max-width: 400px;
+			}
+		}
+
+		.main{
+
+			.now-enjoy{
+
+				&__body{
+					padding-top: 85px;
+				}
+			}
+
+			.popular-menu{
+
+				&__body{
+					padding-bottom: 90px;
+				}
+
+				&__menu{
+					gap: 31px 40px;
+				}
+			}
+
+			.exclusive{
+
+				&__body{
+					padding: 90px 0;
+				}
+
+				&__item{
+					padding: 28px 40px;
+				}
+				&__item-title{
+					margin: 20px 0 0 0;
+				}
+				&__item-text{
+					margin: 15px 0;
+				}
+			}
+
+			.masterchef{
+
+				&__item-big-quote{
+					>div{
+						display: grid;
+						grid-template-columns: 13.99549% 72.6693% 10.83521%;
+					}
+				}
+
+				&__item-big-title{
+					font-size: 28px;
+				}
+				&__item-big-subtitle{
+					font-size: 14px;
+					line-height: 15px;
+				}
+				&__item-big-text p:nth-child(3){
+					font-size: 14px;
+					line-height: 15px;
+				}
+			}
+
+			.guestbook{
+
+				&__body{
+					padding: 70px 0 145.5px 0;
+				}
+
+				&__items{
+					margin-top: 40px;
+				}
+			}
+
+			.exquisite{
+				&__items{
+					gap: 20px;
+					margin: 41px 0 0 0;
+				}
+
+				&__item{
+
+					>div:last-child{
+						padding: 15px 30px;
+					}
+				}
+
+				&__title{
+					margin: 20px 0 15px 0;
+				}
+				&__text{
+					font-size: 16px;
+					line-height: 24px;
+				}
+			}
+
+			.contact{
+
+
+				&__body{
+					padding: 70px 0;
+				}
+
+				&__items{
+					display: inline-grid;
+					grid-template-columns: 1fr 1fr;
+					gap: 30px;
+
+				}
+
+				&__item{
+					padding: 45px 80px;
+				}
+			}
+		}
+
+		.footer{
+
+			h4{
+				font-size: 19px;
+			}
+
+			&__body {
+				grid-template-columns: minmax(185px, auto) 154px 143px minmax(136px, auto);
+				gap: 30px 35px;
+			}
+
+			&__link{
+				font-size: 15px;
+			}
+
+			&__text {
+				font-size: 15px;
+				line-height: 19px;
+				text-align: justify;
+
+				grid-template-columns: 1fr;
+				grid-template-rows: 58px auto auto;
+				gap: 20px 10px;
+
+				img{
+					width: auto;
+					height: 100%;
+					justify-self: center;
+				}
+
+				p:nth-child(3){
+					grid-column: 1 / 2;
+				}
+			}
+		}
+	}
+}
+
+// ------------------------- @media max-width: 767px -----------------------------
+@media (max-width: 767px) {
+	h1{
+		font-size: 80px;
+	}
+
+	.wrapper{
+
+		.header{
+
+			.main-menu{
+				grid-template-columns: auto 1fr;
+				gap: 0px;
+
+				&__logo{
+					height: 60px;
+
+					img{
+						height: 100%;
+					}
+				}
+
+				&__menu{
+					display: none;
+				}
+				&__button{
+					display: none;
+				}
+
+				&__burger{
+					display: block;
+					justify-self: end;
+				}
+				.burger{
+					height: 30px;
+					width: 30px;
+					display: grid;		
+					row-gap: 8px;
+					grid-template: 1fr 1fr 1fr / 1fr;
+
+					&__row{
+						background-color: #D3AD7F;
+						border-radius: 2px;
+					}
+				}
+				
+			}
+
+			&__title{
+				max-width: 470px;
+			}
+			&__text{
+				max-width: 270px;
+				font-size: 18px;
+				line-height: 27px;
+			}
+		}
+
+		.main{
+
+			.now-enjoy{
+				&__body {
+					padding: 60px 0 200px 0;
+				}
+
+				&__text{
+					margin: 0 20px 0 10px;
+
+				}
+
+				&__about-us{
+					text-align: justify;
+				}
+			}
+
+			.popular-menu{
+				&__body{
+					padding-bottom: 70px;
+				}
+
+				&__menu{
+					grid-template-columns: 1fr;
+					gap: 31px 0px;;
+				}
+			}
+
+			.exclusive{
+
+
+				&__body{
+					padding: 65px 0 45px 0;
+				}
+
+				&__item{
+					padding: 25px 20px;
+				}
+
+				&__item:hover{
+					background-color: transparent;
+					.exclusive__item-title{
+						text-decoration: none;
+					}
+				}
+			}
+
+			.masterchef{
+
+				&__items{
+					grid-template-columns: 1fr;
+					grid-template-rows: 100vw 100vw;
+				}
+
+				&__item-big-img{
+					height: 88vw;
+				}
+
+				&__item-big-quote{
+					>div{
+						display: grid;
+						grid-template-columns: 13.99549% 69.6693% 10.83521%;
+					}
+				}
+
+				&__item-big-title{
+					font-size: 50px;
+				}
+				&__item-big-subtitle{
+					font-size: 16px;
+					line-height: 26px;
+				}
+				&__item-big-text p:nth-child(3){
+					font-size: 16px;
+					line-height: 26px;
+				}
+				&__items-small{
+					grid-template-rows: 50vw 50vw;
+				}
+				&__item-small-text{
+					font-size: 6.25vw
+				}
+			}
+
+			.guestbook{
+
+				&__body{
+					padding: 60px 0 140.5px 0;
+				}
+
+				&__items{
+					margin: 30px auto 0 auto;
+					grid-template-columns: 1fr;
+					gap: 120px;
+				}
+
+				&__item:hover{
+					transform: scale(1, 1);
+					box-shadow: none;
+				}
+			}
+
+			.exquisite{
+
+				&__items{
+					grid-template-columns: 1fr;
+					grid-template-rows: 23.831% 23.831% 23.831% 23.831%;
+					gap: 20px;
+					margin: 31px 0 0 0;
+				}
+
+				&__text{
+					font-size: 16px;
+					line-height: 26px;
+					color: #938E8E;
+				}
+
+				&__item{
+
+					>div:last-child{
+						padding: 20px 40px;
+					}
+				}
+
+				&__title{
+					margin: 30px 0 20px 0;
+				}
+				&__text{
+					font-size: 16px;
+					line-height: 26px;
+				}
+			}
+
+			.contact{
+
+				&__body{
+					padding: 60px 0;
+				}
+
+				&__item{
+					padding: 40px 30px;
+				}
+			}
+		}
+
+		.footer{
+
+			&__body {
+				grid-template-columns: 1fr 1fr 1fr;
+				gap: 30px 35px;
+			}
+
+			&__text{
+				max-width: none;
+				grid-template-columns: 95px 1fr;
+				grid-template-rows: auto auto;
+				grid-column: 1 / 4;
+
+				order: 5;
+
+				gap: 15px 30px;
+
+				img{
+					width: 100%;
+					height: auto;
+					grid-row: 1/3;
+				}
+
+				p:nth-child(3){
+					grid-column: 2/3;
+				}
+			}
+			&__soc-net{
+				grid-column: 1 / 4;
+				order: 4;
+			}
+
+			&__rights{
+				grid-column: 1 / 4;
+				order: 6;
+			}
+		}
+	}
+}
+
+// ------------------------- @media max-width: 575px -----------------------------
+@media (max-width: 575px) {
+	h2{
+		font-size: 40px;
+	}
+	h2:after,
+	h2:before {
+		content: "";
+		display: inline-block;
+		width: 10px;
+		height: 1px;
+		background-color: #FFFFFF;
+	}
+	h2:before {
+		margin: 0 8px 17px 0;
+	}
+	h2:after {
+		margin: 0 0 17px 8px;
+	}
+
+	h4{
+		font-size: 18px;
+	}
+
+	.wrapper{
+
+		.header{
+
+			&__body{
+				padding: 0 0 50px 0;
+			}
+
+			&__title{
+				text-align: center;
+				max-width: 575px;
+				margin: 50px 0 35px 0; 
+			}
+			&__text{
+				text-align: center;
+				margin: 0 auto;
+			}
+			&__buttons{
+				justify-content: center;
+			}
+		}
+
+		.main{
+
+			.now-enjoy{
+
+				&__body {
+					padding: 50px 0 33vw 0;
+					flex-direction: column;
+				}
+
+				&__text{
+					margin: 20px 0 15px 0;
+					text-align: center;
+
+				}
+
+				&__about-us{
+					text-align: center;
+				}
+			}
+
+			.popular-menu{
+ 				&__title{
+ 					margin-bottom: 30px;
+ 				}
+
+ 				h3{
+ 					font-size: 20px;
+ 				}
+
+ 				&__body{
+ 					padding-top: 30vw;
+					padding-bottom: 50px;
+				}
+
+				&__item{
+
+					gap: 15px;
+
+					img{
+						width: 60px;
+					}
+				}
+
+				&__item-text p{
+					font-size: 14px;
+					margin: 8px 0 0 0;
+				}
+
+				&__item-price{
+					font-size: 18px;
+				}
+
+			}
+
+			.exclusive{
+
+				&__body{
+					padding: 50px 0 40px 0;
+				}
+
+				&__items{
+					display: inline-grid;
+					grid-template-columns: 1fr;
+					gap: 20px;
+					margin: 15px 0 0 0;
+				}
+
+				&__item{
+					padding: 7vw 20vw;
+				}
+			}
+
+			.masterchef{
+
+				&__item-big-title{
+					font-size: 24px;
+				}
+				&__item-big-subtitle{
+					font-size: 12px;
+					line-height: 14px;
+				}
+				&__item-big-text p:nth-child(3){
+					font-size: 12px;
+					line-height: 14px;
+				}
+			}
+
+			.guestbook{
+
+				&__body{
+					padding: 50px 0 135.5px 0;
+				}
+			}
+
+			.exquisite{
+
+				&__items{
+					gap: 15px;
+					margin: 25px 0 0 0;
+				}
+
+				&__text{
+					font-size: 16px;
+					line-height: 26px;
+					color: #938E8E;
+				}
+
+				&__item{
+
+					>div:last-child{
+						padding: 10px 15px;
+					}
+				}
+
+				&__title{
+					margin: 15px 0 10px 0;
+				}
+				&__text{
+					font-size: 14px;
+					line-height: 20px;
+				}
+			}
+
+			.contact{
+
+				&__body{
+					padding: 50px 0;
+				}
+
+				&__items{
+					grid-template-columns: 1fr;
+					gap: 30px;
+
+				}
+
+				&__item{
+					padding: 30px 40px;
+				}
+			}
+		}
+
+		.footer{
+
+			h4{
+				font-size: 20px;
+			}
+
+			&__body {
+				grid-template-columns: 1fr;
+				gap: 40px;
+
+				justify-items: center;
+			}
+
+			&__text{
+				width: 90%;
+				grid-template-columns: 95px 1fr;
+				grid-template-rows: auto auto;
+				grid-column: 1 / 2;
+
+				order: 5;
+
+				gap: 15px 20px;
+
+				img{
+					width: 100%;
+					height: auto;
+					grid-row: 1/2;
+				}
+
+				p:nth-child(3){
+					grid-column: 1/3;
+				}
+			}
+
+			&__useful-links,
+			&__help-links,
+			&__subscribe{
+				text-align: center;
+			}
+
+			&__title{
+				margin: 0 0 15px 0;
+			}
+
+			&__link{
+				font-size: 16px;
+			}
+
+			&__subscribe{
+
+				width: 90%;
+				order: 4;
+
+				h4{
+					margin: 0 0 15px 0;
+				}
+				button{
+					margin: 15px 0 0 0;
+				}
+			}
+
+			&__soc-net{
+				grid-column: 1 / 2;
+				order: 3;
+			}
+
+			&__rights{
+				grid-column: 1 / 2;
+				order: 6;
+			}
 		}
 	}
 }
