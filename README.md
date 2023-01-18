@@ -11,6 +11,7 @@ Link: https://ast-astik.github.io/practice_website_coffee/
 ### **Technologies:**
 - **HTML**
 - **CSS**
+- **JavaScript**
 - **SCSS**
 - **FLEXBOX, GRID**
 - **BEM**
